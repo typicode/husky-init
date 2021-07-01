@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "npm run build && xv",
+    "test": "npm run build && xv lib",
     "lint": "eslint . --ext .ts --ignore-path .gitignore",
     "prepare": "husky install"
   },
