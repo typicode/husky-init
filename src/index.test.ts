@@ -27,12 +27,12 @@ export function TestUpdatePkg_Yarn2(): void {
   const expected = {
     scripts: {
       postinstall: 'husky install',
-      prepublishOnly: 'pinst --disable',
-      postpublish: 'pinst --enable',
+      prepack: 'pinst --disable',
+      postpack: 'pinst --enable',
     },
     devDependencies: {
       husky: '^7.0.0',
-      pinst: '^2.0.0',
+      pinst: '^3.0.0',
     },
   }
   assert.deepEqual(actual, expected)

@@ -24,9 +24,9 @@ export function updatePkg(pkg: PackageJson, isYarn2: boolean): PackageJson {
     pkg.scripts ||= {}
     appendScript(pkg, 'postinstall', 'husky install')
     if (pkg.private !== true) {
-      appendScript(pkg, 'prepublishOnly', 'pinst --disable')
-      appendScript(pkg, 'postpublish', 'pinst --enable')
-      pkg.devDependencies.pinst = '^2.0.0'
+      appendScript(pkg, 'prepack', 'pinst --disable')
+      appendScript(pkg, 'postpack', 'pinst --enable')
+      pkg.devDependencies.pinst = '^3.0.0'
     }
   } else {
     pkg.scripts ||= {}
