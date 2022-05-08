@@ -13,7 +13,7 @@ export function TestUpdatePkg(): void {
       prepare: 'husky install',
     },
     devDependencies: {
-      husky: '^7.0.0',
+      husky: '^8.0.0',
     },
   }
   assert.deepEqual(actual, expected)
@@ -31,7 +31,7 @@ export function TestUpdatePkg_Yarn2(): void {
       postpack: 'pinst --enable',
     },
     devDependencies: {
-      husky: '^7.0.0',
+      husky: '^8.0.0',
       pinst: '^3.0.0',
     },
   }

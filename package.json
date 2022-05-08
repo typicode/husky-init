@@ -27,7 +27,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "husky": "^7.0.0"
+    "husky": "^8.0.0"
   },
   "devDependencies": {
     "@tsconfig/node12": "^1.0.7",
@@ -38,6 +38,6 @@
     "xv": "^0.2.3"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   }
 }

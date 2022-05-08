@@ -19,7 +19,7 @@ function appendScript(pkg: PackageJson, scriptName: string, cmd: string) {
 
 export function updatePkg(pkg: PackageJson, isYarn2: boolean): PackageJson {
   pkg.devDependencies ||= {}
-  pkg.devDependencies.husky = '^7.0.0'
+  pkg.devDependencies.husky = '^8.0.0'
   if (isYarn2) {
     pkg.scripts ||= {}
     appendScript(pkg, 'postinstall', 'husky install')
