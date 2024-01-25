@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Use the new `husky init` command. More info at https://typicode.github.io/husky/
+
 # husky-init
 
 > Install and setup husky quickly
